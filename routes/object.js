@@ -4,18 +4,35 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
     var obj = {
-        items: [{
-            id: 1,
-        },{
-            id: 2,
-        },{
-            id: 3,
-        },{
-            id: 4,
-        },{
-            id: 5,
-        }]
-    };
+    "results": [{
+            "id": 2,
+            "title": "Ghost in the Machine",
+            "artist": "The Police",
+            "cover_art": "ghost_in_the_machine.jpg"
+        }, {
+            "id": 6,
+            "title": "Red",
+            "artist": "Black Uhuru",
+            "cover_art": "red.jpg"
+        }, {
+            "id": 22,
+            "title": "The Division Bell",
+            "artist": "Pink Floyd",
+            "cover_art": "the_division_bell.jpg"
+        }, {
+            "id": 18,
+            "title": "Thriller",
+            "artist": "Michael Jackson",
+            "cover_art": "thriller.jpg"
+        }, {
+            "id": 55,
+            "title": "21",
+            "artist": "Adele",
+            "cover_art": "21.jpg"
+        }
+
+    ]
+} ; 
     res.json(obj);
 });
 
